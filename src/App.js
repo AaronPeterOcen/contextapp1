@@ -1,15 +1,17 @@
 import React from 'react';
 import Booklist from './components/Booklist';
 import Navbar from './components/Navbar';
-import ContextProvider from './context/ThemeContext';
+import Themetoggle from './components/Themetoggle';
+import ThemeContextProvider from './context/ThemeContext';
 
  function App() {
   return (
     <div className='App'>
-      <ContextProvider>
+      <ThemeContextProvider>
       <Navbar />
       <Booklist />
-      </ContextProvider>
+      <Themetoggle />
+      </ThemeContextProvider>
     </div>
   )
 }
